@@ -222,6 +222,10 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	}();
 
+	this.forceMouseDown = function ( e ) {
+		onMouseDown(e);
+	}
+
 	this.dispose = function () {
 
 		scope.domElement.removeEventListener( 'contextmenu', onContextMenu, false );
