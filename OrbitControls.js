@@ -226,6 +226,14 @@ THREE.OrbitControls = function ( object, domElement ) {
 		onMouseDown(e);
 	}
 
+	this.forceTouchStart = function ( e ) {
+		onTouchStart(e);
+	}
+
+	this.forceTouchMove = function ( e ) {
+		onTouchMove(e);
+	}
+
 	this.dispose = function () {
 
 		scope.domElement.removeEventListener( 'contextmenu', onContextMenu, false );
